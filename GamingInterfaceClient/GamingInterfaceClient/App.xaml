@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GamingInterfaceClient.App">
+    <Application.Resources>
+        <x:String x:Key="strAppName">Gaming Interface Client</x:String>
+        <x:String x:Key="strtitlePageGameInterface">Game Interface</x:String>
+        <x:String x:Key="strHintUrl">Address</x:String>
+        <x:String x:Key="strHintPort">Port Number</x:String>
+        <x:String x:Key="strHintPassword">Password</x:String>
+        <x:String x:Key="strButtonStart">Start</x:String>
+
+        <x:String x:Key="strTitlePageEdit">Edit Page</x:String>
+        <x:String x:Key="strButtonEdit">Edit</x:String>
+        <x:String x:Key="strFragmentEditButtonSave">Save</x:String>
+        <x:String x:Key="strFragmentEditButtonDelete">Delete</x:String>
+        <x:String x:Key="strFragmentEditTextText">Button Text</x:String>
+        <x:String x:Key="strFragmentEditTextLeftShift">Shift</x:String>
+        <x:String x:Key="strFragmentEditTextLeftCtrl">Ctrl</x:String>
+        <x:String x:Key="strFragmentEditTextLeftAlt">Alt</x:String>
+        <x:String x:Key="strFragmentEditTextRightShift">RShift</x:String>
+        <x:String x:Key="strFragmentEditTextRightCtrl">RCtrl</x:String>
+        <x:String x:Key="strFragmentEditTextRightAlt">RAlt</x:String>
+
+        <x:String x:Key="strPageEditButtonSave">Save</x:String>
+        <x:String x:Key="strTitleFragmentEdit">Edit</x:String>
+        <x:String x:Key="strMainWarning">Warning - do NOT use an existing password that you use ANYWHERE else!</x:String>
+        <x:String x:Key="strEditHelpMessage">To start adding controls, double tap on the screen.  Tap on a control to reselect it</x:String>
+        <x:String x:Key="strEditFragment">Select a Key Below:</x:String>
+        <x:String x:Key="strEditPageEditMode">Edit Mode</x:String>
+        <x:String x:Key="strEditPageDragMode">Drag and Drop mode</x:String>
+        <x:String x:Key="strEditPageDetailEditMode">Detail Edit mode</x:String>
+        <x:String x:Key="strEditPageSaved">Saved Successfully!</x:String>
+        <x:String x:Key="strPageMainAbout">About</x:String>
+        <x:String x:Key="strMainPageWarning"></x:String>
+        <x:String x:Key="strMainPageServerLink">https://github.com/Terence-D/GameInputCommandServer</x:String>
+
+        <!-- About View -->
+        <x:String x:Key="strVersion">Version: %1$s (build %2$d)</x:String>
+        <x:String x:Key="strLibraries">3rd Party Libraries</x:String>
+        <x:String x:Key="strAboutCryptoTitle">Encryption library by Mataprasad</x:String>
+        <x:String x:Key="strLegalCrypto">Licensed under the MIT License.  See below for details</x:String>
+        <x:String x:Key="strWebsiteCrypto">https://github.com/mataprasad/Cross-platform-AES-encryption-128bit/blob/master/LICENSE</x:String>
+        <x:String x:Key="strAboutColorPicker">Color Picker</x:String>
+        <x:String x:Key="strLegalColor">Licensed under the Apache 2.0 license.  See below for details</x:String>
+        <x:String x:Key="strWebsiteColor"><![CDATA[https://android-arsenal.com/details/1/1693]]></x:String>
+        <x:String x:Key="strAboutEasyPermissions">Easy Permissions Library</x:String>
+        <x:String x:Key="strLegalEasyPermissions">Licensed under the Apache 2.0 License.  See below for details</x:String>
+        <x:String x:Key="strWebsiteEasyPermissions">https://github.com/googlesamples/easypermissions</x:String>
+        <x:String x:Key="strLegal">Legal</x:String>
+        <x:String x:Key="strLegalContents">GIC Client (this software) and the GIC Server are open source products and combined are used to act as a remote control style device for your PC.  Copyright 2019 Terence Doerksen</x:String>
+        <x:String x:Key="strWebsiteApache">http://www.apache.org/licenses/LICENSE-2.0</x:String>
+        <x:String x:Key="strWebsiteGit">https://github.com/Terence-D/GamingInterfaceClientAndroid</x:String>
+
+        <x:String x:Key="strPageMainHelpButton">Help (Website)</x:String>
+        <x:String x:Key="strEditPageSettings">Settings</x:String>
+        <x:String x:Key="strColorPickerTitle">Color Picker</x:String>
+        <x:String x:Key="strEditFragmentFontColor">Font Color</x:String>
+        <x:String x:Key="strEditFragmentButtonColor1">Primary Color</x:String>
+        <x:String x:Key="strEditFragmentButtonColor2">Secondary Color</x:String>
+        <x:String x:Key="strPageMainHelp">To use this you need to run GIC Server (also Open Source) on your Windows computer where the game resides.  Please visit the link below for further information</x:String>
+        <x:String x:Key="strPasswordInvalid">Please enter a password of at least 6 characters</x:String>
+        <x:String x:Key="strPortInvalid">Invalid Port number</x:String>
+        <x:String x:Key="strAddressInvalid">Please enter a valid address pointing to your computer running GIC Server</x:String>
+
+        <x:String x:Key="strDefaultControlText">New</x:String>
+        <x:String x:Key="strEditFragmentBackgroundImage">Background Image</x:String>
+        <x:String x:Key="strEditFragmentBackgroundColor1">Primary Color</x:String>
+        <x:String x:Key="strEditFragmentBackgrouondColor2">Secondary Color</x:String>
+        <x:String x:Key="strControlTypeButton">Button</x:String>
+        <x:String x:Key="strControlTypeText">Text</x:String>
+        <x:String x:Key="strControlTypeImage">Image</x:String>
+        <x:String x:Key="strEditFragmentImageDelete">Delete</x:String>
+        <x:String x:Key="strEditFragmentImage">Image</x:String>
+        <x:String x:Key="strEditFragmentImageTitle">Image Editor</x:String>
+        <x:String x:Key="strFragmentEditControlSwitchButton">Button Type</x:String>
+        <x:String x:Key="strImageGridTitle">Choose Image</x:String>
+        <x:String x:Key="strItemGridText">Import</x:String>
+        <x:String x:Key="strItemTextImport">Import</x:String>
+        <x:String x:Key="strItemTextDefault">Default</x:String>
+        <x:String x:Key="strFragmentEditButtonNormal">Normal</x:String>
+        <x:String x:Key="strFragmentEditButtonPressed">Pressed</x:String>
+        <x:String x:Key="strFragmentEditFontTypeface">Font</x:String>
+        <x:String x:Key="strFragmentToggleOn">Toggle On Command</x:String>
+        <x:String x:Key="strFragmentToggleOff">Toggle Off Command</x:String>
+        <x:String x:Key="strFragmentToggleText">Switch Text</x:String>
+        <x:String x:Key="strControlTypeSwitch">Switch</x:String>
+        <x:String x:Key="strFragmentEditToggleOff">Off</x:String>
+        <x:String x:Key="strFragmentEditToggleOn">On</x:String>
+        <x:String x:Key="strPageMainServerUpgradeTitle">Server Mismatch</x:String>
+        <x:String x:Key="strPageMainServerUpgradeText">The GIC Server appears to be out of date - please upgrade to the latest version by clicking on the \"Website\" link on the server.  If you did not yet install the server, click the Help link below,</x:String>
+        <x:String x:Key="strTitlePageScreenManager">Screen Manager</x:String>
+        <x:String x:Key="strPageScreensNew">New</x:String>
+        <x:String x:Key="strPageScreensUpdate">Update</x:String>
+        <x:String x:Key="strPageScreensImport">Import</x:String>
+        <x:String x:Key="strPageScreensExport">Export</x:String>
+        <x:String x:Key="strPageScreensDelete">Delete</x:String>
+        <x:String x:Key="strLoading">Please Wait…</x:String>
+        <x:String x:Key="strNeedPermission">This action requires you to enable write access.  After accepting, you will need to click on the button again to begin the Import/Export.</x:String>
+        <x:String x:Key="strExportComplete">Export Complete!</x:String>
+        <x:String x:Key="strZipSuccessful">ZIP File successfully created:</x:String>
+        <x:String x:Key="strPageMainScreenManager">Screen Manager</x:String>
+        <x:String x:Key="strCannotDeleteLastItem">Cannot remove last screen!</x:String>
+        <x:String x:Key="strPageScreensConfirmDelete"><![CDATA[Are you sure you wish to PERMANENTLY delete <b>%1$s</b>?]]></x:String>
+        <x:String x:Key="strImportSuccessful">Import Successful</x:String>
+        <x:String x:Key="strInvalidZip">Invalid Zip File!</x:String>
+        <x:String x:Key="strMenuHelp">Help</x:String>
+        <x:String x:Key="strMenuAbout">About</x:String>
+        <x:String x:Key="strMenuToggleTheme">Toggle Theme</x:String>
+        <x:String x:Key="strTitlePageAbout">About</x:String>
+        <x:String x:Key="strTitlePageMain">GIC</x:String>
+
+        <OnPlatform x:Key="dimPageMargin" x:TypeArguments="Thickness" Default="16,16,16,16" />
+        <x:Double x:Key="dimFabMargin">16</x:Double>
+        <x:Double x:Key="dimButtonPadding">16</x:Double>
+        <x:Double x:Key="dimTitleTextSize">32</x:Double>
+    </Application.Resources>
+</Application>

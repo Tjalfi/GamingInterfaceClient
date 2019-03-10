@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="300" android:versionName="3.0" package="ca.coffeeshopstudio.gaminginterfaceclient" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
+	<application android:label="GamingInterfaceClient" android:icon="@mipmap/icon"></application>
+</manifest>
