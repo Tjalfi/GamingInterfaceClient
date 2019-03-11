@@ -6,96 +6,100 @@
              Title="{StaticResource strAppName}">
     
     <ContentPage.Content>
-        
-        <StackLayout
-            Margin="{StaticResource dimPageMargin}">
 
-            <Label
-                x:Name="lblTitle"
-                Text="{StaticResource strTitlePageAbout}"
-                HorizontalOptions="Center"
-                FontSize="{StaticResource dimTitleTextSize}"
-                FontAttributes="Bold, Italic"
-                Margin="8, 8, 8, 0" />
+        <ScrollView>
 
-            <Label
-                x:Name="lblVersion"
-                FontSize="Large"
-                HorizontalOptions="Center" />
+            <StackLayout
+                Margin="{StaticResource dimPageMargin}">
 
-            <Label
-                x:Name="lblLibraries"
-                Text="{StaticResource strLibraries}"
-                FontSize="Large"
-                HorizontalOptions="Center" />
+                <Label
+                    x:Name="lblTitle"
+                    Text="{StaticResource strTitlePageAbout}"
+                    HorizontalOptions="Center"
+                    FontSize="{StaticResource dimTitleTextSize}"
+                    FontAttributes="Bold, Italic"
+                    Margin="8, 8, 8, 0" />
 
-            <Label
-                x:Name="lblAboutCryptoTitle"
-                Text="{StaticResource strAboutCryptoTitle}"
-                FontSize="Medium"
-                HorizontalOptions="Start" />
+                <Label
+                    x:Name="lblVersion"
+                    FontSize="Large"
+                    HorizontalOptions="Center" />
 
-            <Label
-                x:Name="lblLegalCrypto"
-                Text="{StaticResource strLegalCrypto}" />
+                <Label
+                    x:Name="lblLibraries"
+                    Text="{StaticResource strLibraries}"
+                    FontSize="Large"
+                    HorizontalOptions="Center" />
 
-            <cr:HyperlinkLabel
-                x:Name="lblWebsiteCrypto"
-                Text="{StaticResource strWebsiteCrypto}"
-                Margin="6" />
+                <Label
+                    x:Name="lblAboutCryptoTitle"
+                    Text="{StaticResource strAboutCryptoTitle}"
+                    FontSize="Medium"
+                    HorizontalOptions="Start" />
 
-            <Label
-                x:Name="lblAboutColorPicker"
-                Text="{StaticResource strAboutColorPicker}"
-                FontSize="Medium"
-                HorizontalOptions="Start" />
+                <Label
+                    x:Name="lblLegalCrypto"
+                    Text="{StaticResource strLegalCrypto}" />
 
-            <Label
-                x:Name="lblLegalColor"
-                Text="{StaticResource strLegalColor}" />
+                <cr:HyperlinkLabel
+                    x:Name="lblWebsiteCrypto"
+                    Text="{StaticResource strWebsiteCrypto}"
+                    Margin="6" />
 
-            <cr:HyperlinkLabel
-                x:Name="lblWebsiteColor"
-                Text="{StaticResource strWebsiteColor}"
-                Margin="6" />
+                <Label
+                    x:Name="lblAboutColorPicker"
+                    Text="{StaticResource strAboutColorPicker}"
+                    FontSize="Medium"
+                    HorizontalOptions="Start" />
 
-            <Label
-                x:Name="lblAboutEasyPermissions"
-                Text="{StaticResource strAboutEasyPermissions}"
-                FontSize="Medium"
-                HorizontalOptions="Start" />
+                <Label
+                    x:Name="lblLegalColor"
+                    Text="{StaticResource strLegalColor}" />
 
-            <Label
-                x:Name="lblLegalEasyPermissions"
-                Text="{StaticResource strLegalEasyPermissions}" />
+                <cr:HyperlinkLabel
+                    x:Name="lblWebsiteColor"
+                    Text="{StaticResource strWebsiteColor}"
+                    Margin="6" />
 
-            <cr:HyperlinkLabel
-                x:Name="lblWebsiteEasyPermissions"
-                Text="{StaticResource strWebsiteEasyPermissions}"
-                Margin="6" />
+                <Label
+                    x:Name="lblAboutEasyPermissions"
+                    Text="{StaticResource strAboutEasyPermissions}"
+                    FontSize="Medium"
+                    HorizontalOptions="Start" />
 
-            <Label
-                x:Name="lblLegal"
-                Text="{StaticResource strLegal}"
-                FontSize="Large"
-                HorizontalOptions="Center" />
+                <Label
+                    x:Name="lblLegalEasyPermissions"
+                    Text="{StaticResource strLegalEasyPermissions}" />
 
-            <Label
-                x:Name="lblLegalContents"
-                Text="{StaticResource strLegalContents}" />
+                <cr:HyperlinkLabel
+                    x:Name="lblWebsiteEasyPermissions"
+                    Text="{StaticResource strWebsiteEasyPermissions}"
+                    Margin="6" />
 
-            <cr:HyperlinkLabel
-                x:Name="lblWebsiteGit"
-                Text="{StaticResource strWebsiteGit}"
-                Margin="6" />
+                <Label
+                    x:Name="lblLegal"
+                    Text="{StaticResource strLegal}"
+                    FontSize="Large"
+                    HorizontalOptions="Center" />
 
-            <cr:HyperlinkLabel
-                x:Name="lblWebsiteApache"
-                Text="{StaticResource strWebsiteApache}"
-                Margin="6" />
+                <Label
+                    x:Name="lblLegalContents"
+                    Text="{StaticResource strLegalContents}" />
 
-        </StackLayout>
-        
+                <cr:HyperlinkLabel
+                    x:Name="lblWebsiteGit"
+                    Text="{StaticResource strWebsiteGit}"
+                    Margin="6" />
+
+                <cr:HyperlinkLabel
+                    x:Name="lblWebsiteApache"
+                    Text="{StaticResource strWebsiteApache}"
+                    Margin="6" />
+
+            </StackLayout>
+
+        </ScrollView>
+
     </ContentPage.Content>
     
 </ContentPage>

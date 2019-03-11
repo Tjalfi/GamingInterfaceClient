@@ -13,7 +13,7 @@ namespace GamingInterfaceClient.Renderer
             get
             {
                 string url = (string)GetValue(UrlProperty);
-                if (url == "" || url == null)
+                if (url == null || url == "")
                 {
                     url = Text;
                 }

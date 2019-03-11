@@ -32,85 +32,90 @@
 
     <ContentPage.Content>
 
-        <StackLayout
-            Margin="{StaticResource dimPageMargin}">
-
-            <Label
-                x:Name="lblTitle"
-                Text="{StaticResource strTitlePageMain}"
-                HorizontalOptions="Center"
-                FontSize="{StaticResource dimTitleTextSize}"
-                FontAttributes="Bold, Italic"
-                Margin="8, 8, 8, 0" />
-
-            <Entry
-                x:Name="entAddress"
-                Placeholder="{StaticResource strHintUrl}"
-                Keyboard="Url"
-                HorizontalOptions="Start"
-                WidthRequest="200"
-                Margin="8, 8, 0, 0" />
-
-            <Entry 
-                x:Name="entPort"
-                Placeholder="{StaticResource strHintPort}"
-                Keyboard="Numeric"
-                HorizontalOptions="Start"
-                WidthRequest="200"
-                Margin="8, 8, 0, 0" />
-
-            <Entry
-                x:Name="entPassword"
-                Placeholder="{StaticResource strHintPassword}"
-                Keyboard="Default"
-                IsPassword="True"
-                HorizontalOptions="Start"
-                WidthRequest="200"
-                Margin="8, 8, 0, 0" />
-
-            <Label
-                x:Name="lblWarning"
-                Text="{StaticResource strMainWarning}"
-                Margin="8, 8, 8, 0" />
-
-            <Picker
-                x:Name="pcrScreens"
-                HorizontalOptions="Start"
-                Margin="8, 8, 8, 0" />
+        <ScrollView>
 
             <StackLayout
-                Orientation="Horizontal"
-                HorizontalOptions="Start">
+                Margin="{StaticResource dimPageMargin}">
 
-                <Button
-                    x:Name="btnScreenManager"
-                    Text="{StaticResource strPageMainScreenManager}"
-                    Clicked="BtnScreenManager_Clicked"
+                <Label
+                    x:Name="lblTitle"
+                    Text="{StaticResource strTitlePageMain}"
+                    HorizontalOptions="Center"
+                    FontSize="{StaticResource dimTitleTextSize}"
+                    FontAttributes="Bold, Italic"
+                    Margin="8, 8, 8, 0" />
+
+                <Entry
+                    x:Name="entAddress"
+                    Placeholder="{StaticResource strHintUrl}"
+                    Keyboard="Url"
                     HorizontalOptions="Start"
-                    Padding="{StaticResource dimButtonPadding}"
+                    WidthRequest="200"
                     Margin="8, 8, 0, 0" />
 
-                <Button
-                    x:Name="btnStart"
-                    Text="{StaticResource strButtonStart}"
-                    Clicked="BtnStart_Clicked"
+                <Entry 
+                    x:Name="entPort"
+                    Placeholder="{StaticResource strHintPort}"
+                    Keyboard="Numeric"
                     HorizontalOptions="Start"
-                    Padding="{StaticResource dimButtonPadding}"
+                    WidthRequest="200"
                     Margin="8, 8, 0, 0" />
+
+                <Entry
+                    x:Name="entPassword"
+                    Placeholder="{StaticResource strHintPassword}"
+                    Keyboard="Default"
+                    IsPassword="True"
+                    HorizontalOptions="Start"
+                    WidthRequest="200"
+                    Margin="8, 8, 0, 0" />
+
+                <Label
+                    x:Name="lblWarning"
+                    Text="{StaticResource strMainWarning}"
+                    Margin="8, 8, 8, 0" />
+
+                <Picker
+                    x:Name="pcrScreens"
+                    SelectedIndexChanged="PcrScreens_SelectedIndexChanged"
+                    HorizontalOptions="Start"
+                    Margin="8, 8, 8, 0" />
+
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="Start">
+
+                    <Button
+                        x:Name="btnScreenManager"
+                        Text="{StaticResource strPageMainScreenManager}"
+                        Clicked="BtnScreenManager_Clicked"
+                        HorizontalOptions="Start"
+                        Padding="{StaticResource dimButtonPadding}"
+                        Margin="8, 8, 0, 0" />
+
+                    <Button
+                        x:Name="btnStart"
+                        Text="{StaticResource strButtonStart}"
+                        Clicked="BtnStart_Clicked"
+                        HorizontalOptions="Start"
+                        Padding="{StaticResource dimButtonPadding}"
+                        Margin="8, 8, 0, 0" />
+
+                </StackLayout>
+
+                <Label
+                    x:Name="lblMainHelp"
+                    Text="{StaticResource strPageMainHelp}"
+                    Margin="8, 8, 8, 0" />
+
+                <cr:HyperlinkLabel
+                    x:Name="lblServerLink"
+                    Text="{StaticResource strMainPageServerLink}"
+                    Margin="8, 8, 8, 0" />
 
             </StackLayout>
 
-            <Label
-                x:Name="lblMainHelp"
-                Text="{StaticResource strPageMainHelp}"
-                Margin="8, 8, 8, 0" />
-
-            <cr:HyperlinkLabel
-                x:Name="lblServerLink"
-                Text="{StaticResource strMainPageServerLink}"
-                Margin="8, 8, 8, 0" />
-
-        </StackLayout>
+        </ScrollView>
 
     </ContentPage.Content>
 

@@ -110,9 +110,9 @@
         <x:String x:Key="strTitlePageAbout">About</x:String>
         <x:String x:Key="strTitlePageMain">GIC</x:String>
 
-        <OnPlatform x:Key="dimPageMargin" x:TypeArguments="Thickness" Default="16,16,16,16" />
-        <x:Double x:Key="dimFabMargin">16</x:Double>
-        <x:Double x:Key="dimButtonPadding">16</x:Double>
-        <x:Double x:Key="dimTitleTextSize">32</x:Double>
+        <OnPlatform x:Key="dimPageMargin" x:TypeArguments="Thickness" Default="64, 64, 64, 64" />
+        <x:Double x:Key="dimFabMargin">32</x:Double>
+        <x:Double x:Key="dimButtonPadding">32</x:Double>
+        <x:Double x:Key="dimTitleTextSize">64</x:Double>
     </Application.Resources>
 </Application>

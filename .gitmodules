@@ -1,0 +1,3 @@
+[submodule "external/Cross-platform-AES-encryption-128bit"]
+	path = external/Cross-platform-AES-encryption-128bit
+	url = https://github.com/mataprasad/Cross-platform-AES-encryption-128bit.git
