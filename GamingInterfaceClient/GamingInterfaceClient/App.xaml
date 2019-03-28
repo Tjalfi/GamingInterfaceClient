@@ -36,7 +36,7 @@
         <x:String x:Key="strMainPageServerLink">https://github.com/Terence-D/GameInputCommandServer</x:String>
 
         <!-- About View -->
-        <x:String x:Key="strVersion">Version: %1$s (build %2$d)</x:String>
+        <x:String x:Key="strVersion">Version: {0} (build {1:d})</x:String>
         <x:String x:Key="strLibraries">3rd Party Libraries</x:String>
         <x:String x:Key="strAboutCryptoTitle">Encryption library by Mataprasad</x:String>
         <x:String x:Key="strLegalCrypto">Licensed under the MIT License.  See below for details</x:String>
@@ -101,7 +101,9 @@
         <x:String x:Key="strZipSuccessful">ZIP File successfully created:</x:String>
         <x:String x:Key="strPageMainScreenManager">Screen Manager</x:String>
         <x:String x:Key="strCannotDeleteLastItem">Cannot remove last screen!</x:String>
-        <x:String x:Key="strPageScreensConfirmDelete"><![CDATA[Are you sure you wish to PERMANENTLY delete <b>%1$s</b>?]]></x:String>
+        <x:String x:Key="strPageScreensConfirmDelete"><![CDATA[Are you sure you wish to PERMANENTLY delete <b>{0}</b>?]]></x:String>
+        <x:String x:Key="strYes">yes</x:String>
+        <x:String x:Key="strNo">no</x:String>
         <x:String x:Key="strImportSuccessful">Import Successful</x:String>
         <x:String x:Key="strInvalidZip">Invalid Zip File!</x:String>
         <x:String x:Key="strMenuHelp">Help</x:String>

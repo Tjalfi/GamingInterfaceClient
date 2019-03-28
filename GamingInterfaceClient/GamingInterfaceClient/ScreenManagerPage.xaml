@@ -3,116 +3,141 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GamingInterfaceClient.ScreenManagerPage">
     <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-        <ScrollView>
-
-            <StackLayout
-                Margin="{StaticResource dimPageMargin}">
-
-                <Label
-                    x:Name="lblTitle"
-                    Text="{StaticResource strTitlePageScreenManager}"
-                    HorizontalOptions="Center"
-                    FontSize="{StaticResource dimTitleTextSize}"
-                    FontAttributes="Bold, Italic"
-                    Margin="8, 8, 8, 0" />
+            <ScrollView Grid.Row="0">
 
                 <StackLayout
-                    Orientation="Horizontal"
-                    HorizontalOptions="Start">
+                    Margin="{StaticResource dimPageMargin}">
 
-                    <Button
-                        x:Name="btnNew"
-                        Text="{StaticResource strPageScreensNew}"
-                        Clicked="BtnNew_Clicked"
-                        HorizontalOptions="Start"
-                        Padding="{StaticResource dimButtonPadding}"
-                        Margin="8, 8, 0, 0" />
-
-                    <Button
-                        x:Name="btnStart"
-                        Text="{StaticResource strPageScreensImport}"
-                        Clicked="BtnStart_Clicked"
-                        HorizontalOptions="Start"
-                        Padding="{StaticResource dimButtonPadding}"
-                        Margin="8, 8, 0, 0" />
-
-                </StackLayout>
-
-                <Picker
-                    x:Name="pcrScreens"
-                    HorizontalOptions="Start"
-                    Margin="8, 8, 8, 0" />
-
-                <StackLayout
-                    Orientation="Horizontal"
-                    HorizontalOptions="Start"
-                    Margin="8, 32, 0, 0">
+                    <Label
+                        x:Name="lblTitle"
+                        Text="{StaticResource strTitlePageScreenManager}"
+                        HorizontalOptions="Center"
+                        FontSize="{StaticResource dimTitleTextSize}"
+                        FontAttributes="Bold, Italic"
+                        Margin="8, 8, 8, 0" />
 
                     <StackLayout
+                        Orientation="Horizontal"
                         HorizontalOptions="Start">
 
-                        <Entry
-                            x:Name="entName"
-                            Keyboard="Text"
+                        <Button
+                            x:Name="btnNew"
+                            Text="{StaticResource strPageScreensNew}"
+                            Clicked="BtnNew_Clicked"
                             HorizontalOptions="Start"
-                            WidthRequest="200" />
+                            Padding="{StaticResource dimButtonPadding}"
+                            Margin="8, 8, 0, 0" />
+
+                        <Button
+                            x:Name="btnImport"
+                            Text="{StaticResource strPageScreensImport}"
+                            Clicked="BtnImport_Clicked"
+                            HorizontalOptions="Start"
+                            Padding="{StaticResource dimButtonPadding}"
+                            Margin="8, 8, 0, 0" />
+
+                    </StackLayout>
+
+                    <Picker
+                        x:Name="pcrScreens"
+                        SelectedIndexChanged="PcrScreens_SelectedIndexChanged"
+                        HorizontalOptions="Start"
+                        Margin="8, 8, 8, 0" />
+
+                    <StackLayout
+                        Orientation="Horizontal"
+                        HorizontalOptions="Start"
+                        Margin="8, 32, 0, 0">
 
                         <StackLayout
-                            Orientation="Horizontal"
                             HorizontalOptions="Start">
 
-                            <Button
-                                x:Name="btnEdit"
-                                Text="{StaticResource strButtonEdit}"
-                                Clicked="BtnEdit_Clicked"
+                            <Entry
+                                x:Name="entName"
+                                Keyboard="Text"
                                 HorizontalOptions="Start"
-                                Padding="{StaticResource dimButtonPadding}"
-                                Margin="0, 8, 0, 0" />
+                                WidthRequest="200" />
+
+                            <StackLayout
+                                Orientation="Horizontal"
+                                HorizontalOptions="Start">
+
+                                <Button
+                                    x:Name="btnEdit"
+                                    Text="{StaticResource strButtonEdit}"
+                                    Clicked="BtnEdit_Clicked"
+                                    HorizontalOptions="Start"
+                                    Padding="{StaticResource dimButtonPadding}"
+                                    Margin="0, 8, 0, 0" />
+
+                                <Button
+                                    x:Name="btnExport"
+                                    Text="{StaticResource strPageScreensExport}"
+                                    Clicked="BtnExport_Clicked"
+                                    HorizontalOptions="Start"
+                                    Padding="{StaticResource dimButtonPadding}"
+                                    Margin="8, 8, 0, 0" />
+
+                            </StackLayout>
+
+                        </StackLayout>
+
+                        <StackLayout
+                            HorizontalOptions="Start"
+                            Margin="32, 0, 0, 0">
 
                             <Button
-                                x:Name="btnExport"
-                                Text="{StaticResource strPageScreensExport}"
-                                Clicked="BtnExport_Clicked"
+                                x:Name="btnUpdate"
+                                Text="{StaticResource strPageScreensUpdate}"
+                                Clicked="BtnUpdate_Clicked"
+                                HorizontalOptions="Start"
+                                Padding="{StaticResource dimButtonPadding}" />
+
+                            <Button
+                                x:Name="btnDelete"
+                                Text="{StaticResource strPageScreensDelete}"
+                                Clicked="BtnDelete_Clicked"
                                 HorizontalOptions="Start"
                                 Padding="{StaticResource dimButtonPadding}"
-                                Margin="8, 8, 0, 0" />
+                                Margin="0, 32, 0, 0" />
+
+                        </StackLayout>
+
+                        <StackLayout
+                            HorizontalOptions="Start">
 
                         </StackLayout>
 
                     </StackLayout>
 
-                    <StackLayout
-                        HorizontalOptions="Start"
-                        Margin="32, 0, 0, 0">
-
-                        <Button
-                            x:Name="btnUpdate"
-                            Text="{StaticResource strPageScreensUpdate}"
-                            Clicked="BtnUpdate_Clicked"
-                            HorizontalOptions="Start"
-                            Padding="{StaticResource dimButtonPadding}" />
-
-                        <Button
-                            x:Name="btnDelete"
-                            Text="{StaticResource strPageScreensDelete}"
-                            Clicked="BtnDelete_Clicked"
-                            HorizontalOptions="Start"
-                            Padding="{StaticResource dimButtonPadding}"
-                            Margin="0, 32, 0, 0" />
-
-                    </StackLayout>
-
-                    <StackLayout
-                        HorizontalOptions="Start">
-
-                    </StackLayout>
-
                 </StackLayout>
 
-            </StackLayout>
+            </ScrollView>
 
-        </ScrollView>
-        
+            <Grid Grid.Row="0" x:Name="grdLoading" IsVisible="False">
+                <StackLayout BackgroundColor="Black" Opacity="0.9" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                    <StackLayout.Orientation>
+                        <OnPlatform x:DataType="StackOrientation" Default="Horizontal">
+                            <On Platform="UWP,WinPhone">Vertical</On>
+                        </OnPlatform>
+                    </StackLayout.Orientation>
+                    <ActivityIndicator IsRunning="True">
+                        <ActivityIndicator.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double" Default="100">
+                                <On Platform="UWP,WinPhone">400</On>
+                            </OnPlatform>
+                        </ActivityIndicator.WidthRequest>
+                    </ActivityIndicator>
+                    <Label Text="{StaticResource strLoading}" />
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+
     </ContentPage.Content>
 </ContentPage>
